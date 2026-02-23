@@ -1,5 +1,5 @@
 ---
-name: implement
+name: spec-implement
 description: Execute tasks and maintain quality through a self-validation loop
 license: MIT
 metadata:

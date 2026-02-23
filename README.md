@@ -10,13 +10,13 @@ npx skills add h3y6e/spec-skills -s '*'
 
 ## Skills
 
-| Skill                                            | Description                                                       |
-| ------------------------------------------------ | ----------------------------------------------------------------- |
-| [`constitution`](./skills/constitution/SKILL.md) | Define shared project rules for spec-skills runs                  |
-| [`specify`](./skills/specify/SKILL.md)           | Create a feature specification and resolve ambiguity in one flow  |
-| [`plan`](./skills/plan/SKILL.md)                 | Create a technical plan and manage annotation-driven updates      |
-| [`tasks`](./skills/tasks/SKILL.md)               | Break spec and plan into executable phase-based tasks             |
-| [`implement`](./skills/implement/SKILL.md)       | Execute tasks and maintain quality through a self-validation loop |
+| Skill                                                  | Description                                                       |
+| ------------------------------------------------------ | ----------------------------------------------------------------- |
+| [`spec-constitution`](./skills/spec-constitution/SKILL.md)  | Define shared project rules for spec-skills runs                  |
+| [`spec-specify`](./skills/spec-specify/SKILL.md)            | Create a feature specification and resolve ambiguity in one flow  |
+| [`spec-plan`](./skills/spec-plan/SKILL.md)                  | Create a technical plan and manage annotation-driven updates      |
+| [`spec-tasks`](./skills/spec-tasks/SKILL.md)                | Break spec and plan into executable phase-based tasks             |
+| [`spec-implement`](./skills/spec-implement/SKILL.md)        | Execute tasks and maintain quality through a self-validation loop |
 
 ## Related
 

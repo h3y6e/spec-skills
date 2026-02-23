@@ -1,5 +1,5 @@
 ---
-name: tasks
+name: spec-tasks
 description: Break spec and plan into executable phase-based tasks
 license: MIT
 metadata:

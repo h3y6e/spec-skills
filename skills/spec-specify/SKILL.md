@@ -1,5 +1,5 @@
 ---
-name: specify
+name: spec-specify
 description: Create a feature specification and resolve ambiguity in one flow
 license: MIT
 metadata:

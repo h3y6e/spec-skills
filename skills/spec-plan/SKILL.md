@@ -1,5 +1,5 @@
 ---
-name: plan
+name: spec-plan
 description: Create a technical plan and manage annotation-driven updates
 license: MIT
 metadata:

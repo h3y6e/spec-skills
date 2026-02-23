@@ -1,5 +1,5 @@
 ---
-name: constitution
+name: spec-constitution
 description: Define shared project rules for spec-skills runs
 license: MIT
 metadata:
