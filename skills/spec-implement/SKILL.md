@@ -4,7 +4,7 @@ description: Execute tasks and maintain quality through a self-validation loop
 license: MIT
 metadata:
   author: h3y6e
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Implement Skill

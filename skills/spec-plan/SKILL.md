@@ -4,7 +4,7 @@ description: Create a technical plan and manage annotation-driven updates
 license: MIT
 metadata:
   author: h3y6e
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Plan Skill
