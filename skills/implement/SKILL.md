@@ -1,0 +1,66 @@
+---
+name: implement
+description: Execute tasks and maintain quality through a self-validation loop
+---
+
+# Implement Skill
+
+## Purpose
+
+Implement using `specs/{feature}/tasks.md` as the single progress source.
+
+## Input
+
+- `specs/constitution.md`
+- `specs/{feature}/spec.md`
+- `specs/{feature}/plan.md`
+- `specs/{feature}/tasks.md`
+
+## Output
+
+- Implemented code
+- Progress updates in `specs/{feature}/tasks.md`
+- `specs/{feature}/research/{topic}.md` when validation notes are needed
+
+## Steps
+
+1. Read constitution, apply `language` and shared rules, and confirm plan/tasks approval state.
+2. Process open tasks from top to bottom.
+3. Run an implementation loop for each task.
+   - Implement
+   - Self-validate (tests, type checks, static checks, security checks)
+   - Fix
+4. Update `tasks.md` after each successful task.
+   - Mark the task as complete
+   - Update `status` to `in-progress` or `done` when appropriate
+   - Record progress in this format
+     - Task: [TASK_ID]
+     - Change: [CHANGE_SUMMARY]
+     - Validation: [PASS_FAIL_AND_EVIDENCE]
+     - Next: [NEXT_TASK]
+5. Escalate only exception cases.
+   - Conflicting requirements
+   - High-risk changes
+   - Validation failures that cannot be resolved in-loop
+6. Run backflow when implementation findings affect requirements.
+   - Update `spec.md`
+   - Reset `spec.md` status to `draft`
+7. Confirm DoD completion and place outputs in the repository structure.
+8. If documents are updated, perform final review and keep them within 150 lines.
+   - Remove repetition
+   - Simplify wording
+   - Resolve contradictions
+9. In the completion message, suggest the next step.
+   - If open tasks remain: continue `implement`
+   - If all tasks are complete: final completion report
+
+## Success Criteria
+
+- `tasks.md` progress matches actual implementation state.
+- Phase DoD items are satisfied.
+- Non-exception issues are resolved inside the self-validation loop.
+
+## Completion Guidance
+
+- Next recommended step: continue `implement` or close implementation
+- Include completed tasks, remaining tasks, and the next task in the response
