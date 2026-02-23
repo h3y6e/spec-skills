@@ -8,6 +8,18 @@
 npx skills add h3y6e/spec-skills -s '*'
 ```
 
+## Workflow
+
+```mermaid
+flowchart TD
+    A[spec-constitution] -.-> B[spec-specify] --> C[spec-plan] --> D[spec-tasks] --> E[spec-implement]
+    E --> F((Done))
+    C -.->|backflow| B
+    D -.->|backflow| C
+    D -.->|backflow| B
+    E -.->|backflow| B
+```
+
 ## Skills
 
 | Skill                                                  | Description                                                       |
