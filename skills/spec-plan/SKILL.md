@@ -46,8 +46,8 @@ Create or update `specs/{feature}/plan.md` and define technical design plus exec
    - Simplify wording
    - Resolve contradictions
 9. In the completion message, suggest the next step.
-   - After approval: `tasks`
-   - If annotation work remains: continue `plan`
+   - After approval: `spec-tasks`
+   - If annotation work remains: continue `spec-plan`
 
 ## Success Criteria
 
@@ -57,5 +57,5 @@ Create or update `specs/{feature}/plan.md` and define technical design plus exec
 
 ## Completion Guidance
 
-- Next recommended step: `tasks`
+- Next recommended step: `spec-tasks`
 - Include the target feature and generated `plan.md` path in the response

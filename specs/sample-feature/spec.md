@@ -14,7 +14,7 @@ As a user, I want to create the sample-feature spec and pass it to planning.
 Why this priority: This is the starting point for downstream phases.
 Independent Test: `spec.md` includes stories and requirements.
 Acceptance Scenarios:
-1. Given a feature request, When `specify` runs, Then `spec.md` is created
+1. Given a feature request, When `spec-specify` runs, Then `spec.md` is created
 
 ### User Story 2 - Expand to plan and tasks (Priority: P2)
 As a user, I want to create plan and tasks from the spec and move to implementation.
@@ -22,10 +22,10 @@ As a user, I want to create plan and tasks from the spec and move to implementat
 Why this priority: This is the core of workflow validation.
 Independent Test: `plan.md` and `tasks.md` are created.
 Acceptance Scenarios:
-1. Given an existing spec, When `plan` and `tasks` run, Then an implementation-ready plan is created
+1. Given an existing spec, When `spec-plan` and `spec-tasks` run, Then an implementation-ready plan is created
 
 ### Edge Cases
-- If the spec has gaps, fill them in `plan` and update `spec` when needed.
+- If the spec has gaps, fill them in `spec-plan` and update `spec` when needed.
 
 ## Requirements
 

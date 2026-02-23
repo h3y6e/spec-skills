@@ -14,13 +14,13 @@ spec-skills prioritizes lightweight execution. Keep artifacts and process minima
 Use instructions that work across agents. Treat Git operations (branch/worktree) as optional and compatible with user workflow choices.
 
 ### III. Specs as the source of truth
-The source of truth for requirements is `specs/{feature}/spec.md`. If planning discovers requirement-impacting changes, `plan` may update `spec.md` and must reset status to `draft`.
+The source of truth for requirements is `specs/{feature}/spec.md`. If planning discovers requirement-impacting changes, `spec-plan` may update `spec.md` and must reset status to `draft`.
 
 ### IV. Design and execution planning are separate
-Keep `plan` and `tasks` separate. `plan` handles technical design and annotation updates; `tasks` handles executable breakdown. Ambiguity resolution is handled inside `specify`.
+Keep `spec-plan` and `spec-tasks` separate. `spec-plan` handles technical design and annotation updates; `spec-tasks` handles executable breakdown. Ambiguity resolution is handled inside `spec-specify`.
 
 ### V. Verification-first implementation
-`implement` follows `implement -> self-validate -> fix` loops. Human escalation is exception-based; routine issues are resolved in the automated validation loop.
+`spec-implement` follows `implement -> self-validate -> fix` loops. Human escalation is exception-based; routine issues are resolved in the automated validation loop.
 
 ### VI. Context efficiency over document volume
 Generated and distributed Markdown should stay within 150 lines when possible; split when needed. At the end, run a final review to deduplicate, simplify, and resolve contradictions.

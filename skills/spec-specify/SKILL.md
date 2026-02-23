@@ -53,8 +53,8 @@ Resolve ambiguity within this skill.
    - Simplify wording
    - Resolve contradictions
 9. In the completion message, suggest the next step.
-   - If review-ready: `plan`
-   - If more refinement is needed: continue `specify`
+   - If review-ready: `spec-plan`
+   - If more refinement is needed: continue `spec-specify`
 
 ## Success Criteria
 
@@ -65,5 +65,5 @@ Resolve ambiguity within this skill.
 
 ## Completion Guidance
 
-- Next recommended step: `plan`
+- Next recommended step: `spec-plan`
 - Include the target feature and generated `spec.md` path in the response

@@ -52,8 +52,8 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
    - Simplify wording
    - Resolve contradictions
 10. In the completion message, suggest the next step.
-    - After approval: `implement`
-    - If requirement changes are needed: `plan` or `specify`
+    - After approval: `spec-implement`
+    - If requirement changes are needed: `spec-plan` or `spec-specify`
 
 ## Success Criteria
 
@@ -64,5 +64,5 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
 
 ## Completion Guidance
 
-- Next recommended step: `implement`
+- Next recommended step: `spec-implement`
 - Include the target feature and generated `tasks.md` path in the response

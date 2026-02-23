@@ -55,7 +55,7 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
    - Simplify wording
    - Resolve contradictions
 9. In the completion message, suggest the next step.
-   - If open tasks remain: continue `implement`
+   - If open tasks remain: continue `spec-implement`
    - If all tasks are complete: final completion report
 
 ## Success Criteria
@@ -66,5 +66,5 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
 
 ## Completion Guidance
 
-- Next recommended step: continue `implement` or close implementation
+- Next recommended step: continue `spec-implement` or close implementation
 - Include completed tasks, remaining tasks, and the next task in the response

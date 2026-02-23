@@ -42,8 +42,8 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
    - Simplify wording
    - Resolve contradictions
 7. In the completion message, suggest the next step.
-   - New feature: `specify`
-   - Existing feature update: `specify` for the target `spec.md`
+   - New feature: `spec-specify`
+   - Existing feature update: `spec-specify` for the target `spec.md`
 
 ## Success Criteria
 
@@ -53,5 +53,5 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 
 ## Completion Guidance
 
-- Next recommended step: `specify`
+- Next recommended step: `spec-specify`
 - Include the target feature and next file path in the response

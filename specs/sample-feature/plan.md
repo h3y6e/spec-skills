@@ -20,13 +20,13 @@ summary: Validation technical plan for sample-feature
 - Compare with init-side templates and review differences.
 
 ### Phase 1: Workflow Design
-- Run `specify -> plan -> tasks -> implement` in order.
+- Run `spec-specify -> spec-plan -> spec-tasks -> spec-implement` in order.
 
 ### Phase 2: Validation
 - Confirm that task DoD is satisfied.
 
 ## Status Policy
-- If `plan` updates `spec`, return `spec` to `draft`.
+- If `spec-plan` updates `spec`, return `spec` to `draft`.
 
 ## Annotation Cycle
 1. Create the first draft
