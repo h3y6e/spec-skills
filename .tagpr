@@ -1,5 +1,5 @@
 [tagpr]
 	releaseBranch = main
-	versionFile = skills/constitution/SKILL.md,skills/specify/SKILL.md,skills/plan/SKILL.md,skills/tasks/SKILL.md,skills/implement/SKILL.md
+	versionFile = skills/spec-constitution/SKILL.md,skills/spec-specify/SKILL.md,skills/spec-plan/SKILL.md,skills/spec-tasks/SKILL.md,skills/spec-implement/SKILL.md
 	vPrefix = true
 	changelog = false
