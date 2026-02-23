@@ -1,6 +1,10 @@
 ---
 name: tasks
 description: Break spec and plan into executable phase-based tasks
+license: MIT
+metadata:
+  author: h3y6e
+  version: "0.1.0"
 ---
 
 # Tasks Skill

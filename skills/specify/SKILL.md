@@ -1,6 +1,10 @@
 ---
 name: specify
 description: Create a feature specification and resolve ambiguity in one flow
+license: MIT
+metadata:
+  author: h3y6e
+  version: "0.1.0"
 ---
 
 # Specify Skill
