@@ -27,7 +27,7 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
 
 ## Steps
 
-1. Read `constitution`, then apply `language` and shared rules.
+1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
 2. Read spec and plan, extract user stories and constraints, and confirm plan/tasks approval state.
 3. Create tasks from `references/tasks-template.md`.
    - Setup

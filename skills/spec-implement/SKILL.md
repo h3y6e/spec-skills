@@ -28,13 +28,14 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
 
 ## Steps
 
-1. Read constitution, apply `language` and shared rules, and confirm plan/tasks approval state.
-2. Process open tasks from top to bottom.
-3. Run an implementation loop for each task.
+1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
+2. Confirm plan/tasks approval state.
+3. Process open tasks from top to bottom.
+4. Run an implementation loop for each task.
    - Implement
    - Self-validate (tests, type checks, static checks, security checks)
    - Fix
-4. Update `tasks.md` after each successful task.
+5. Update `tasks.md` after each successful task.
    - Mark the task as complete
    - Update `status` to `in-progress` or `done` when appropriate
    - Record progress in this format
@@ -42,19 +43,19 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
      - Change: [CHANGE_SUMMARY]
      - Validation: [PASS_FAIL_AND_EVIDENCE]
      - Next: [NEXT_TASK]
-5. Escalate only exception cases.
+6. Escalate only exception cases.
    - Conflicting requirements
    - High-risk changes
    - Validation failures that cannot be resolved in-loop
-6. Run backflow when implementation findings affect requirements.
+7. Run backflow when implementation findings affect requirements.
    - Update `spec.md`
    - Reset `spec.md` status to `draft`
-7. Confirm DoD completion and place outputs in the repository structure.
-8. If documents are updated, perform final review and keep them within 150 lines.
+8. Confirm DoD completion and place outputs in the repository structure.
+9. If documents are updated, perform final review and keep them within 150 lines.
    - Remove repetition
    - Simplify wording
    - Resolve contradictions
-9. In the completion message, suggest the next step.
+10. In the completion message, suggest the next step.
    - If open tasks remain: continue `spec-implement`
    - If all tasks are complete: final completion report
 

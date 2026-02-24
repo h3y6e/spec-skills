@@ -28,7 +28,7 @@ Create or update `specs/{feature}/plan.md` and define technical design plus exec
 
 ## Steps
 
-1. Read `specs/constitution.md` and apply `language` plus shared rules.
+1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
 2. Read `spec.md` and extract requirements and acceptance criteria.
 3. Create or update `research/{topic}.md` when additional research is required.
 4. Create the plan from `references/plan-template.md`.

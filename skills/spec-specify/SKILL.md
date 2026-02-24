@@ -28,7 +28,7 @@ Resolve ambiguity within this skill.
 
 ## Steps
 
-1. Read `specs/constitution.md` and apply `language` plus shared rules.
+1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
 2. Decide the feature slug and target `specs/{feature}/`.
 3. Create the spec from `references/spec-template.md`.
 4. Run a specification self-review.

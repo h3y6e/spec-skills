@@ -15,9 +15,8 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 
 ## Input
 
-- User requirements
+- User-provided project rules (via prompt or conversation)
 - Existing `specs/constitution.md` when present
-- Existing `specs/{feature}/spec.md`, `plan.md`, `tasks.md` for consistency checks
 
 ## Output
 
@@ -25,23 +24,27 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 
 ## Steps
 
-1. Read `specs/constitution.md`; if missing, initialize from `references/constitution-template.md`.
-2. Update frontmatter.
-   - Required keys: `language`, `summary`
-   - `language` is the default documentation language
-   - `summary` is a one-line overview
-3. Update Core Principles with project-specific rules.
-4. Add variable project rules when needed.
+1. Determine `language`.
+   - Use the existing `specs/constitution.md` frontmatter value if present
+   - Otherwise infer from the user's prompt language
+   - Conduct all subsequent interaction in this language
+2. Read `specs/constitution.md`; if missing, initialize from `references/constitution-template.md`.
+3. Update Core Principles based on user-provided rules.
+   - Ask the user if no rules were provided
+4. Add variable project rules only when the user specifies them.
    - Naming rules
    - Quality thresholds
    - Security requirements
-5. Verify consistency with existing feature documents.
+5. Update frontmatter.
+   - Required keys: `language`, `summary`
+6. If updating an existing constitution, verify consistency with existing feature documents.
    - Check `specs/{feature}/spec.md`, `plan.md`, `tasks.md`
-6. Perform final review and keep the file within 150 lines.
+   - Skip this step when no feature documents exist
+7. Perform final review and keep the file within 150 lines.
    - Remove repetition
    - Simplify wording
    - Resolve contradictions
-7. In the completion message, suggest the next step.
+8. In the completion message, suggest the next step.
    - New feature: `spec-specify`
    - Existing feature update: `spec-specify` for the target `spec.md`
 
