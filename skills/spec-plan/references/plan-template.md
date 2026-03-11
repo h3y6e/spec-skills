@@ -24,19 +24,7 @@ Place this file at `specs/{feature}/plan.md`.
 - [ ] Aligns with constitution shared rules
 - [ ] Output paths are under `specs/`
 
-## Project Structure
-
-### Documentation
-
-```text
-specs/{feature}/
-├── spec.md
-├── plan.md
-├── tasks.md
-└── research/*.md
-```
-
-### Source Structure
+## Source Structure
 
 ```text
 [REPOSITORY_STRUCTURE]
