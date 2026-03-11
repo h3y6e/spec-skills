@@ -1,6 +1,6 @@
 ---
 name: spec-tasks
-description: Break spec and plan into executable phase-based tasks
+description: Create or update specs/{feature}/tasks.md by decomposing spec and plan into phased, executable tasks with IDs (T001...), parallel candidates (P), story linkage, and Definition of Done per phase. Use this skill whenever someone wants to break a plan into concrete implementation tasks, create a structured task checklist for a feature, add DoD to task phases, or create/update tasks.md. This is step 4 of 5 in the spec-driven workflow, after spec-plan and before spec-implement. Don't use for general to-do lists or project management outside the spec workflow.
 license: MIT
 metadata:
   author: h3y6e
@@ -29,6 +29,7 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
 
 1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
 2. Read spec and plan, extract user stories and constraints, and confirm plan/tasks approval state.
+   - Require `spec.md` and `plan.md` to be `approved` before generating implementation tasks
 3. Create tasks from `references/tasks-template.md`.
    - Setup
    - Foundational
@@ -40,13 +41,15 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
    - Use `[USn]` for story linkage
 5. Add `DoD` under each phase.
    - Include checks for testing, observability, and rollback readiness
+   - Write DoD as proof that the phase itself is complete
 6. Express dependencies through phase order and task descriptions.
 7. Run backflow if requirement gaps or contradictions are discovered.
    - Update `spec.md`
    - Reset `spec.md` status to `draft`
 8. Update frontmatter.
    - Required keys: `status`, `summary`
-   - File type and ownership are identified by path
+   - Initial `status`: `draft`
+   - Set `status: approved` when tasks are ready for implementation
 9. Perform final review and keep the file within 150 lines.
    - Remove repetition
    - Simplify wording
