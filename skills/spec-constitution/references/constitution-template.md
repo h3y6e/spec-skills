@@ -20,9 +20,17 @@ Find root causes. No temporary fixes. Senior developer standards.
 Changes should only touch what's necessary. Avoid introducing bugs.
 
 ### IV. [PRINCIPLE_NAME]
-<!-- Write 1-3 sentences describing required behavior -->
+<!--
+Example names: Security Baseline, Source of Truth, Verification First.
+Write 1-3 sentences describing required behavior.
+Keep this at the level of durable project policy, not feature scope or architecture.
+-->
 [PRINCIPLE_RULE]
 
 ### V. [PRINCIPLE_NAME]
-<!-- Write 1-3 sentences describing required behavior -->
+<!--
+Example names: Human Review Boundaries, Performance Posture, Tooling Neutrality.
+Write 1-3 sentences describing required behavior.
+Good: "Do not expose secrets in client code." Bad: "Use webhooks and snapshots."
+-->
 [PRINCIPLE_RULE]
