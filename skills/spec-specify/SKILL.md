@@ -1,6 +1,6 @@
 ---
 name: spec-specify
-description: Create a feature specification and resolve ambiguity in one flow
+description: Create or update specs/{feature}/spec.md from user requirements — writing user stories, functional requirements, acceptance criteria, and resolving ambiguity through focused questions. Use this skill whenever someone wants to document feature requirements, write a specification, turn ideas or user research into a formal spec, update spec.md, or says "create a spec for [feature]". This is step 2 of 5 in the spec-driven workflow, after spec-constitution and before spec-plan. Don't use for technical design (plan.md), task decomposition, bug fixes, or implementation.
 license: MIT
 metadata:
   author: h3y6e
@@ -12,7 +12,7 @@ metadata:
 ## Purpose
 
 Create or update `specs/{feature}/spec.md` from user requirements.
-Resolve ambiguity within this skill.
+Resolve ambiguity within this skill before handing off to downstream phases.
 
 ## Input
 
@@ -31,6 +31,9 @@ Resolve ambiguity within this skill.
 1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
 2. Decide the feature slug and target `specs/{feature}/`.
 3. Create the spec from `references/spec-template.md`.
+   - Keep the spec focused on user needs, behavior, business rules, and constraints
+   - Avoid locking in technical design choices unless the user explicitly requires them
+   - If optional or secondary capabilities can stand alone, prefer splitting them into separate specs instead of expanding the current one
 4. Run a specification self-review.
    - Scope
    - Data
@@ -39,10 +42,11 @@ Resolve ambiguity within this skill.
    - Integration
    - Edge
    - Terminology
+   - Ambiguity
    - Completion
 5. Ask only high-impact clarification questions.
-   - Ask one question at a time
-   - Maximum 3 questions per session
+   - Actively look for ambiguity that would materially change scope, behavior, data, UX, or downstream planning
+   - Resolve high-impact ambiguity before recommending the next phase
    - Record low-impact open points in `research/{topic}.md`
 6. Integrate answers directly into the spec.
 7. Update frontmatter.
@@ -61,7 +65,7 @@ Resolve ambiguity within this skill.
 - Prioritized user stories include at least one P1 story.
 - Acceptance scenarios are testable.
 - Functional requirements align with success criteria.
-- No unresolved high-impact ambiguity remains.
+- No unresolved high-impact ambiguity remains before handoff.
 
 ## Completion Guidance
 

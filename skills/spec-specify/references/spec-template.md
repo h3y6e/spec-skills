@@ -36,14 +36,9 @@ Acceptance Scenarios:
 - FR-002: [REQUIREMENT]
 - FR-003: [REQUIREMENT]
 
-### Clarification Policy
-
-- Prioritize high-impact ambiguity.
-- Ask one question at a time.
-- Integrate answers directly into the spec.
-
 ### Key Entities
 
+<!-- Optional: include only domain entities that help explain the feature. -->
 - [ENTITY_NAME]: [ENTITY_DESCRIPTION]
 
 ## Success Criteria
