@@ -52,6 +52,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 7. Update frontmatter.
    - Required keys: `status`, `summary`
    - Initial `status`: `draft`
+   - Set `status: approved` when no unresolved high-impact ambiguity remains and the spec is ready for planning
 8. Perform final review and keep the file within 150 lines.
    - Remove repetition
    - Simplify wording
