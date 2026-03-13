@@ -54,3 +54,10 @@ Independent Test: [STORY_INDEPENDENT_TEST]
 
 - [ ] [DOD_CHECK]
 - [ ] [DOD_CHECK]
+
+## Progress Log
+
+- Task: [TASK_ID]
+  Change: [CHANGE_SUMMARY]
+  Validation: [PASS_FAIL_AND_EVIDENCE]
+  Next: [NEXT_TASK]
