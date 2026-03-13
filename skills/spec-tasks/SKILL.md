@@ -4,7 +4,7 @@ description: Create or update specs/{feature}/tasks.md by decomposing spec and p
 license: MIT
 metadata:
   author: h3y6e
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Tasks Skill
