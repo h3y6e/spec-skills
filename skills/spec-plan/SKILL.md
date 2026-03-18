@@ -1,6 +1,6 @@
 ---
 name: spec-plan
-description: Create or update specs/{feature}/plan.md with technical design based on spec.md — covering architecture decisions, library choices, API design, data schemas, and implementation strategy. Use this skill whenever someone wants to design the technical implementation of a feature, make technology decisions, plan the architecture, create or update plan.md, or says "the spec is done, now I need a technical plan." This is step 3 of 5 in the spec-driven workflow, after spec-specify and before spec-tasks.
+description: Create or update specs/{feature}/plan.md with technical design based on spec.md — covering architecture decisions, library choices, API design, data schemas, and implementation strategy. Use this skill whenever someone wants to design the technical implementation of a feature, make technology decisions, plan the architecture, create or update plan.md, or says "the spec is done, now I need a technical plan." This follows spec-specify and precedes spec-tasks in the spec-driven workflow.
 license: MIT
 metadata:
   author: h3y6e
@@ -15,7 +15,7 @@ Create or update `specs/{feature}/plan.md` and define technical design plus exec
 
 ## Input
 
-- `specs/constitution.md`
+- Existing `specs/constitution.md` when present
 - `specs/{feature}/spec.md`
 - `specs/{feature}/research/*.md` when present
 - Plan annotations when present
@@ -28,7 +28,7 @@ Create or update `specs/{feature}/plan.md` and define technical design plus exec
 
 ## Steps
 
-1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
+1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
 2. Read `spec.md` and extract requirements and acceptance criteria.
    - If planning proceeds and `spec.md` is still `draft` despite having no unresolved high-impact ambiguity, update it to `approved`
 3. Create or update `research/{topic}.md` when additional research is required.

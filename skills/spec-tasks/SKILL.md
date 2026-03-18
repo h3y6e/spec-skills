@@ -1,6 +1,6 @@
 ---
 name: spec-tasks
-description: Create or update specs/{feature}/tasks.md by decomposing spec and plan into phased, executable tasks with IDs (T001...), parallel candidates (P), story linkage, and Definition of Done per phase. Use this skill whenever someone wants to break a plan into concrete implementation tasks, create a structured task checklist for a feature, add DoD to task phases, or create/update tasks.md. This is step 4 of 5 in the spec-driven workflow, after spec-plan and before spec-implement. Don't use for general to-do lists or project management outside the spec workflow.
+description: Create or update specs/{feature}/tasks.md by decomposing spec and plan into phased, executable tasks with IDs (T001...), parallel candidates (P), story linkage, and Definition of Done per phase. Use this skill whenever someone wants to break a plan into concrete implementation tasks, create a structured task checklist for a feature, add DoD to task phases, or create/update tasks.md. This follows spec-plan and precedes spec-implement in the spec-driven workflow. Don't use for general to-do lists or project management outside the spec workflow.
 license: MIT
 metadata:
   author: h3y6e
@@ -15,7 +15,7 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
 
 ## Input
 
-- `specs/constitution.md`
+- Existing `specs/constitution.md` when present
 - `specs/{feature}/spec.md`
 - `specs/{feature}/plan.md`
 - `specs/{feature}/research/*.md` when present
@@ -27,7 +27,7 @@ Create or update `specs/{feature}/tasks.md` and define execution order plus comp
 
 ## Steps
 
-1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
+1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
 2. Read spec and plan, extract user stories and constraints, and confirm plan/tasks approval state.
    - Require `spec.md` and `plan.md` to be `approved` before generating implementation tasks
 3. Create tasks from `references/tasks-template.md`.

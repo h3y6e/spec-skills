@@ -48,13 +48,13 @@ spec-skills/
             └── implementation-note.md
 ```
 
-## The Five Skills (Workflow Order)
+## Workflow Skills
 
-1. **spec-constitution** - Define shared project rules in `specs/constitution.md`
-2. **spec-specify** - Create `specs/{feature}/spec.md` from requirements
-3. **spec-plan** - Create `specs/{feature}/plan.md` with technical design
-4. **spec-tasks** - Break plan into `specs/{feature}/tasks.md` with phased tasks
-5. **spec-implement** - Execute tasks with implement/self-validate/fix loops
+0. `spec-constitution` - Define shared project rules in `specs/constitution.md` when the team wants durable workflow governance
+1. `spec-specify` - Create `specs/{feature}/spec.md` from requirements
+2. `spec-plan` - Create `specs/{feature}/plan.md` with technical design
+3. `spec-tasks` - Break plan into `specs/{feature}/tasks.md` with phased tasks
+4. `spec-implement` - Execute tasks with implement/self-validate/fix loops
 
 ## Content Style Guidelines
 
@@ -87,7 +87,7 @@ Every skill file follows this exact structure:
 - Skill directories: `spec-{name}` (kebab-case with `spec-` prefix)
 - Feature directories: `specs/{feature-slug}/` (kebab-case)
 - Research files: `specs/{feature}/research/{topic}.md` (kebab-case)
-- Fixed filenames: `SKILL.md`, `constitution.md`, `spec.md`, `plan.md`, `tasks.md`
+- Fixed filenames: `SKILL.md`, `spec.md`, `plan.md`, `tasks.md`; when used, the constitution file is `constitution.md`
 
 ### Writing Style
 

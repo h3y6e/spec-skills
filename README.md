@@ -10,9 +10,11 @@ npx skills add h3y6e/spec-skills -s '*'
 
 ## Workflow
 
+The workflow is `0-4`: `spec-constitution` is optional step `0`, and teams that do not need shared workflow rules can start directly with step `1` (`spec-specify`).
+
 ```mermaid
 flowchart TD
-    A[spec-constitution] -.-> B[spec-specify] --> C[spec-plan] --> D[spec-tasks] --> E[spec-implement]
+    A[spec-constitution (optional)] -.-> B[spec-specify] --> C[spec-plan] --> D[spec-tasks] --> E[spec-implement]
     E --> F((Done))
     C -.->|backflow| B
     D -.->|backflow| C
@@ -24,7 +26,7 @@ flowchart TD
 
 | Skill                                                  | Description                                                       |
 | ------------------------------------------------------ | ----------------------------------------------------------------- |
-| [`spec-constitution`](./skills/spec-constitution/SKILL.md)  | Define shared project rules for spec-skills runs                  |
+| [`spec-constitution`](./skills/spec-constitution/SKILL.md)  | Optionally define shared project rules for spec-skills runs       |
 | [`spec-specify`](./skills/spec-specify/SKILL.md)            | Create a feature specification and resolve ambiguity in one flow  |
 | [`spec-plan`](./skills/spec-plan/SKILL.md)                  | Create a technical plan and manage annotation-driven updates      |
 | [`spec-tasks`](./skills/spec-tasks/SKILL.md)                | Break spec and plan into executable phase-based tasks             |

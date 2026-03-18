@@ -1,6 +1,6 @@
 ---
 name: spec-specify
-description: Create or update specs/{feature}/spec.md from user requirements — writing user stories, functional requirements, acceptance criteria, and resolving ambiguity through focused questions. Use this skill whenever someone wants to document feature requirements, write a specification, turn ideas or user research into a formal spec, update spec.md, or says "create a spec for [feature]". This is step 2 of 5 in the spec-driven workflow, after spec-constitution and before spec-plan. Don't use for technical design (plan.md), task decomposition, bug fixes, or implementation.
+description: Create or update specs/{feature}/spec.md from user requirements — writing user stories, functional requirements, acceptance criteria, and resolving ambiguity through focused questions. Use this skill whenever someone wants to document feature requirements, write a specification, turn ideas or user research into a formal spec, update spec.md, or says "create a spec for [feature]". This is the first required step in the spec-driven workflow and typically follows spec-constitution when a team uses shared constitutional rules. Don't use for technical design (plan.md), task decomposition, bug fixes, or implementation.
 license: MIT
 metadata:
   author: h3y6e
@@ -17,7 +17,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 ## Input
 
 - User requirements
-- `specs/constitution.md`
+- Existing `specs/constitution.md` when present
 - Existing `specs/{feature}/spec.md` when present
 - Existing `specs/{feature}/research/*.md` when present
 
@@ -28,7 +28,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 
 ## Steps
 
-1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
+1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
 2. Decide the feature slug and target `specs/{feature}/`.
 3. Create the spec from `references/spec-template.md`.
    - Keep the spec focused on user needs, behavior, business rules, and constraints

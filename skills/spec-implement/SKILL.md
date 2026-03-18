@@ -1,6 +1,6 @@
 ---
 name: spec-implement
-description: Execute open tasks from specs/{feature}/tasks.md using an implement → self-validate → fix loop, updating tasks.md progress after each completed task. Use this skill whenever someone wants to start or continue feature implementation guided by tasks.md, run a self-validating coding loop, continue from a specific task ID, or work through phased tasks with built-in quality checks. This is step 5 of 5 in the spec-driven workflow. Don't use for ad-hoc bug fixes, code review, or implementation tasks not defined in tasks.md.
+description: Execute open tasks from specs/{feature}/tasks.md using an implement → self-validate → fix loop, updating tasks.md progress after each completed task. Use this skill whenever someone wants to start or continue feature implementation guided by tasks.md, run a self-validating coding loop, continue from a specific task ID, or work through phased tasks with built-in quality checks. This is the execution phase after spec-tasks in the spec-driven workflow. Don't use for ad-hoc bug fixes, code review, or implementation tasks not defined in tasks.md.
 license: MIT
 metadata:
   author: h3y6e
@@ -15,7 +15,7 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
 
 ## Input
 
-- `specs/constitution.md`
+- Existing `specs/constitution.md` when present
 - `specs/{feature}/spec.md`
 - `specs/{feature}/plan.md`
 - `specs/{feature}/tasks.md`
@@ -28,7 +28,7 @@ Implement using `specs/{feature}/tasks.md` as the single progress source.
 
 ## Steps
 
-1. Read `specs/constitution.md`, resolve `language`, and apply shared rules. Conduct all subsequent interaction in this language.
+1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
 2. Confirm plan/tasks approval state.
    - Require `spec.md`, `plan.md`, and `tasks.md` to be `approved` before implementation begins
 3. Process open tasks from top to bottom.

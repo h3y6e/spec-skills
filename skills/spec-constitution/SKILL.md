@@ -1,6 +1,6 @@
 ---
 name: spec-constitution
-description: Use when creating or updating specs/constitution.md to define durable principles that govern spec-skills runs, especially when starting a new workflow, revising shared governance for the spec-driven phases, or deciding what belongs in constitutional rules versus lower-level docs.
+description: Use when a team wants to create or update specs/constitution.md to define durable principles that govern spec-skills runs, especially when starting a new workflow, revising shared governance for the spec-driven phases, or deciding what belongs in constitutional rules versus lower-level docs.
 license: MIT
 metadata:
   author: h3y6e
@@ -11,7 +11,7 @@ metadata:
 
 ## Purpose
 
-Create or update `specs/constitution.md` and confirm the shared rules that spec-skills should apply during their own workflow.
+Create or update `specs/constitution.md` when the team wants shared rules that spec-skills should apply during their own workflow.
 
 ## Input
 
