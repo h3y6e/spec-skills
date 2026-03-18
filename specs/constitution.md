@@ -25,4 +25,4 @@ Keep `spec-plan` and `spec-tasks` separate. `spec-plan` handles technical design
 ### VI. Context efficiency over document volume
 Generated and distributed Markdown should stay within 150 lines when possible; split when needed. At the end, run a final review to deduplicate, simplify, and resolve contradictions.
 
-This constitution is used to record stable, project-wide rules. Feature scope, routes, schemas, sync strategy, and architecture belong in `spec.md` or `plan.md` unless intentionally promoted to a permanent shared rule.
+This constitution is used to record stable rules that spec-skills should apply during their workflow. It is not a replacement for the repository's general engineering handbook. Feature scope, routes, schemas, sync strategy, and architecture belong in `spec.md` or `plan.md` unless intentionally promoted to a permanent shared rule for spec-skills runs.

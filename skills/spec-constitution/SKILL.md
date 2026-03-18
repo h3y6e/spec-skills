@@ -1,6 +1,6 @@
 ---
 name: spec-constitution
-description: Create or update specs/constitution.md — the foundational rules file for spec-driven development, defining project-wide coding standards, naming conventions, quality thresholds, security requirements, and workflow language. Use this skill whenever someone wants to set up project rules, initialize a spec-skills workflow for a new project, update shared conventions, change the workflow language, or asks what to do first in spec-driven development. This is step 1 of 5 — always recommend it before spec-specify, spec-plan, spec-tasks, or spec-implement.
+description: Use when creating or updating specs/constitution.md to define durable principles that govern spec-skills runs, especially when starting a new workflow, revising shared governance for the spec-driven phases, or deciding what belongs in constitutional rules versus lower-level docs.
 license: MIT
 metadata:
   author: h3y6e
@@ -11,7 +11,7 @@ metadata:
 
 ## Purpose
 
-Create or update `specs/constitution.md` and confirm shared rules for spec-skills.
+Create or update `specs/constitution.md` and confirm the shared rules that spec-skills should apply during their own workflow.
 
 ## Input
 
@@ -33,15 +33,21 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 3. Keep the document structure aligned with `references/constitution-template.md`.
    - Do not invent additional top-level sections unless the user explicitly requests them
 4. Update Core Principles based on user-provided rules.
-   - Ask the user if no rules were provided
-   - Keep only stable, project-wide principles here
+    - Ask the user if no rules were provided
+    - Keep only stable, project-wide principles here when they are meant to guide spec-skills phases
+    - Prefer durable decision principles over implementation details
+    - Do not copy concrete coding conventions, framework APIs, directory names, commands, or tool-specific rules into the constitution unless the user explicitly wants to elevate them into permanent governance
+    - Even when the user requests elevation, include such a rule only if it is intended to remain valid across features and over time; otherwise keep it in lower-level docs
+    - The constitution should govern spec-skills behavior and outputs, not become a general repository policy file by default
 5. Add variable project rules only when the user specifies them.
-   - Fold them into existing principles when possible
+    - Fold them into existing principles when possible
+    - If a rule belongs more naturally in `AGENTS.md`, contribution docs, or feature documents, keep it out of the constitution and preserve that separation
 6. Update frontmatter.
    - Required keys: `language`, `summary`
 7. If updating an existing constitution, verify consistency with existing feature documents.
-   - Check `specs/{feature}/spec.md`, `plan.md`, `tasks.md`
-   - Skip this step when no feature documents exist
+    - Check `specs/{feature}/spec.md`, `plan.md`, `tasks.md`
+    - Preserve consistency by removing contradictions, not by copying feature-level implementation detail into the constitution
+    - Skip this step when no feature documents exist
 8. Perform final review and keep the file within 150 lines.
    - Remove repetition
    - Simplify wording
@@ -52,7 +58,8 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 
 ## Success Criteria
 
-- Constitution reflects current shared rules.
+- Constitution reflects the shared rules that spec-skills should use during the workflow.
+- Constitution stays at the level of durable governing principles rather than duplicating lower-level implementation guidance.
 - Frontmatter values are valid and complete.
 - Related feature documents stay consistent.
 
