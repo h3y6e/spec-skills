@@ -14,7 +14,7 @@ The workflow is `0-3`: `spec-constitution` is optional step `0`, and teams that 
 
 ```mermaid
 flowchart TD
-    A[spec-constitution (optional)] -.-> B[spec-specify] --> C[spec-tasks] --> D[spec-implement]
+    A["spec-constitution optional"] -.-> B["spec-specify"] --> C["spec-tasks"] --> D["spec-implement"]
     D --> E((Done))
     C -.->|backflow| B
     D -.->|backflow| C
