@@ -45,7 +45,7 @@ Create or update `specs/constitution.md` when the team wants shared rules that s
 6. Update frontmatter.
    - Required keys: `language`, `summary`
 7. If updating an existing constitution, verify consistency with existing feature documents.
-    - Check `specs/{feature}/spec.md`, `plan.md`, `tasks.md`
+    - Check `specs/{feature}/spec.md` and `tasks.md`
     - Preserve consistency by removing contradictions, not by copying feature-level implementation detail into the constitution
     - Skip this step when no feature documents exist
 8. Perform final review and keep the file within 150 lines.

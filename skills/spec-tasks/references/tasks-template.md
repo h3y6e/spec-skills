@@ -5,6 +5,21 @@ summary: Phase-based tasks for [FEATURE_NAME]
 
 Place this file at `specs/{feature}/tasks.md`.
 
+## Summary
+
+- [EXECUTION_SUMMARY]
+
+## Execution Context
+
+- Runtime/Platform: [RUNTIME_OR_PLATFORM]
+- Dependencies: [PRIMARY_DEPENDENCIES]
+- Constraints: [EXECUTION_CONSTRAINTS]
+- Validation: [VALIDATION_STRATEGY]
+
+## Key Decisions
+
+- [DECISION]
+
 ## Format
 
 - `- [ ] Txxx (P) [USn] [DESCRIPTION] ([PATH])`
@@ -15,6 +30,9 @@ Place this file at `specs/{feature}/tasks.md`.
 
 - [ ] T001 [SETUP_TASK]
 - [ ] T002 (P) [SETUP_TASK]
+- [ ] T003 [SPIKE_OR_RESEARCH_TASK_IF_NEEDED]
+
+<!-- Use a spike/research task when uncertainty could change the spec, task order, or validation approach. -->
 
 ### DoD
 
@@ -23,8 +41,8 @@ Place this file at `specs/{feature}/tasks.md`.
 
 ## Phase 2: Foundational
 
-- [ ] T003 [FOUNDATIONAL_TASK]
-- [ ] T004 (P) [FOUNDATIONAL_TASK]
+- [ ] T004 [FOUNDATIONAL_TASK]
+- [ ] T005 (P) [FOUNDATIONAL_TASK]
 
 ### DoD
 
@@ -32,9 +50,6 @@ Place this file at `specs/{feature}/tasks.md`.
 - [ ] [DOD_CHECK]
 
 ## Phase [N]: User Story [N] (Priority: P[N])
-
-Goal: [STORY_GOAL]
-Independent Test: [STORY_INDEPENDENT_TEST]
 
 - [ ] T0xx [USn] [IMPLEMENTATION_TASK]
 - [ ] T0xx (P) [USn] [IMPLEMENTATION_TASK]
@@ -59,5 +74,8 @@ Independent Test: [STORY_INDEPENDENT_TEST]
 
 - Task: [TASK_ID]
   Change: [CHANGE_SUMMARY]
+  Doc Impact: [local-only | tasks-impacting | spec-impacting]
   Validation: [PASS_FAIL_AND_EVIDENCE]
   Next: [NEXT_TASK]
+
+<!-- If impact is `tasks-impacting` or `spec-impacting`, stop and realign the documents before continuing implementation. -->

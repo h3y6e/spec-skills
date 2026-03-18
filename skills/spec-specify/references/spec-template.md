@@ -5,6 +5,8 @@ summary: Requirements and scenarios for [FEATURE_NAME]
 
 Place this file at `specs/{feature}/spec.md`.
 
+<!-- Keep this document user-facing. Execution design and delivery sequencing belong in `tasks.md`. -->
+
 ## Context and Goals
 
 - Context: [BACKGROUND]
@@ -18,8 +20,10 @@ Place this file at `specs/{feature}/spec.md`.
 Why this priority: [PRIORITY_RATIONALE]
 Independent Test: [INDEPENDENT_TEST]
 Acceptance Scenarios:
-1. Given [CONTEXT], When [ACTION], Then [OUTCOME]
-2. Given [CONTEXT], When [ACTION], Then [OUTCOME]
+1. [CONTEXT]. When [ACTION], [OUTCOME].
+2. [CONTEXT]. When [ACTION], [OUTCOME].
+
+<!-- Keep each scenario structured around context, action, and outcome, but write it as natural prose in the document language. -->
 
 [Add as many user stories as needed]
 

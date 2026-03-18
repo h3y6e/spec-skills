@@ -1,6 +1,6 @@
 ---
 name: spec-specify
-description: Create or update specs/{feature}/spec.md from user requirements — writing user stories, functional requirements, acceptance criteria, and resolving ambiguity through focused questions. Use this skill whenever someone wants to document feature requirements, write a specification, turn ideas or user research into a formal spec, update spec.md, or says "create a spec for [feature]". This is the first required step in the spec-driven workflow and typically follows spec-constitution when a team uses shared constitutional rules. Don't use for technical design (plan.md), task decomposition, bug fixes, or implementation.
+description: Create or update specs/{feature}/spec.md from user requirements — writing user stories, functional requirements, acceptance criteria, and resolving ambiguity through focused questions. Use this skill whenever someone wants to document feature requirements, write a specification, turn ideas or user research into a formal spec, update spec.md, or says "create a spec for [feature]". This is the first required step in the spec-driven workflow and typically follows spec-constitution when a team uses shared constitutional rules. Don't use for execution design, task decomposition, bug fixes, or implementation.
 license: MIT
 metadata:
   author: h3y6e
@@ -34,6 +34,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - Keep the spec focused on user needs, behavior, business rules, and constraints
    - Avoid locking in technical design choices unless the user explicitly requires them
    - If optional or secondary capabilities can stand alone, prefer splitting them into separate specs instead of expanding the current one
+   - Write acceptance scenarios as natural sentences that still make context, action, and outcome explicit; avoid forcing literal `Given/When/Then` wording when it hurts readability
 4. Run a specification self-review.
    - Scope
    - Data
@@ -45,20 +46,20 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - Ambiguity
    - Completion
 5. Ask only high-impact clarification questions.
-   - Actively look for ambiguity that would materially change scope, behavior, data, UX, or downstream planning
+   - Actively look for ambiguity that would materially change scope, behavior, data, UX, or downstream execution design
    - Resolve high-impact ambiguity before recommending the next phase
    - Record low-impact open points in `research/{topic}.md`
 6. Integrate answers directly into the spec.
 7. Update frontmatter.
    - Required keys: `status`, `summary`
    - Initial `status`: `draft`
-   - Set `status: approved` when no unresolved high-impact ambiguity remains and the spec is ready for planning
+   - Set `status: approved` when no unresolved high-impact ambiguity remains and the spec is ready for execution design and tasking
 8. Perform final review and keep the file within 150 lines.
    - Remove repetition
    - Simplify wording
    - Resolve contradictions
 9. In the completion message, suggest the next step.
-   - If review-ready: `spec-plan`
+   - If review-ready: `spec-tasks`
    - If more refinement is needed: continue `spec-specify`
 
 ## Success Criteria
@@ -70,5 +71,5 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 
 ## Completion Guidance
 
-- Next recommended step: `spec-plan`
+- Next recommended step: `spec-tasks`
 - Include the target feature and generated `spec.md` path in the response
