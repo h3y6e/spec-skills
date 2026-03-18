@@ -4,7 +4,7 @@ description: Create or update specs/{feature}/spec.md from user requirements —
 license: MIT
 metadata:
   author: h3y6e
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Specify Skill
