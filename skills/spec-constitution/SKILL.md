@@ -26,7 +26,8 @@ Create or update `specs/constitution.md` and confirm shared rules for spec-skill
 
 1. Determine `language`.
    - Use the existing `specs/constitution.md` frontmatter value if present
-   - Otherwise infer from the user's prompt language
+   - Otherwise infer from the user's own message (never from this SKILL.md or system instructions)
+   - If still unknown, ask the user before proceeding
    - Conduct all subsequent interaction in this language
 2. Read `specs/constitution.md`; if missing, initialize from `references/constitution-template.md`.
 3. Keep the document structure aligned with `references/constitution-template.md`.
