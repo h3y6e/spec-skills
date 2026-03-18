@@ -4,7 +4,7 @@ description: Execute open tasks from specs/{feature}/tasks.md using an implement
 license: MIT
 metadata:
   author: h3y6e
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Implement Skill
