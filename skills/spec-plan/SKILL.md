@@ -1,17 +1,17 @@
 ---
-name: spec-tasks
-description: Create or update specs/{feature}/tasks.md by turning an approved spec into one execution-ready document with key technical decisions, phased tasks, IDs (T001...), parallel candidates (P), story linkage, and Definition of Done per phase. Use this skill whenever someone wants to translate a spec into concrete implementation work without maintaining a separate execution-design file, create a structured task checklist for a feature, add DoD to task phases, or create/update tasks.md. This follows spec-specify and precedes spec-implement in the spec-driven workflow. Don't use for general to-do lists or project management outside the spec workflow.
+name: spec-plan
+description: Create or update specs/{feature}/plan.md by turning an approved spec into one execution-ready document with key technical decisions, phased tasks, IDs (T001...), parallel candidates (P), story linkage, and Definition of Done per phase. Use this skill whenever someone wants to translate a spec into concrete implementation work without maintaining a separate execution-design file, create a structured task checklist for a feature, add DoD to task phases, or create/update plan.md. This follows spec-specify and precedes spec-implement in the spec-driven workflow. Don't use for general to-do lists or project management outside the spec workflow.
 license: MIT
 metadata:
   author: h3y6e
   version: "0.3.0"
 ---
 
-# Tasks Skill
+# Plan Skill
 
 ## Purpose
 
-Create or update `specs/{feature}/tasks.md` as the execution source of truth, including technical context, key decisions, phased tasks, and completion conditions.
+Create or update `specs/{feature}/plan.md` as the execution source of truth, including technical context, key decisions, phased tasks, and completion conditions.
 
 ## Input
 
@@ -21,7 +21,7 @@ Create or update `specs/{feature}/tasks.md` as the execution source of truth, in
 
 ## Output
 
-- `specs/{feature}/tasks.md`
+- `specs/{feature}/plan.md`
 - `specs/{feature}/spec.md` when backflow is required
 - `specs/{feature}/research/{topic}.md` for additional discovery notes
 
@@ -29,13 +29,13 @@ Create or update `specs/{feature}/tasks.md` as the execution source of truth, in
 
 1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
 2. Read `spec.md`, extract user stories and constraints, and confirm spec approval state.
-   - Require `spec.md` to be `approved` before generating the execution document
-3. Create tasks from `references/tasks-template.md`.
+   - Require `spec.md` to be `approved` before generating the execution plan
+3. Create the plan from `references/plan-template.md`.
    - Summary
    - Execution Context
    - Key Decisions
    - Phases: Setup, Foundational, User Story (P1, P2, ...), Polish
-   - Add spike or research tasks before implementation when uncertainty could change the spec or task structure
+   - Add spike or research tasks before implementation when uncertainty could change the spec or plan structure
 4. Capture only execution-facing detail that must stay aligned during implementation.
    - Record technical context, constraints, validation strategy, and key decisions here instead of splitting them into another document
    - Reference the spec for user-facing intent rather than repeating full story prose
@@ -54,7 +54,7 @@ Create or update `specs/{feature}/tasks.md` as the execution source of truth, in
 9. Update frontmatter.
     - Required keys: `status`, `summary`
     - Initial `status`: `draft`
-    - Set `status: approved` when tasks are ready for implementation
+    - Set `status: approved` when the plan is ready for implementation
 10. Perform final review and keep the file within 150 lines.
     - Remove repetition
     - Simplify wording
@@ -65,8 +65,8 @@ Create or update `specs/{feature}/tasks.md` as the execution source of truth, in
 
 ## Success Criteria
 
-- Tasks combine execution design and delivery sequencing without requiring another execution document.
-- Tasks support independent delivery by story.
+- The plan combines execution design and delivery sequencing without requiring another execution document.
+- The plan supports independent delivery by story.
 - Each phase has a clear DoD.
 - `(P)` marks valid parallel work.
 - High-uncertainty work is front-loaded as spike or research tasks when needed.
@@ -75,4 +75,4 @@ Create or update `specs/{feature}/tasks.md` as the execution source of truth, in
 ## Completion Guidance
 
 - Next recommended step: `spec-implement`
-- Include the target feature and generated `tasks.md` path in the response
+- Include the target feature and generated `plan.md` path in the response

@@ -28,17 +28,17 @@ spec-skills/
 │   │   └── references/
 │   │       ├── spec-template.md
 │   │       └── research-template.md
-│   ├── spec-tasks/
+│   ├── spec-plan/
 │   │   ├── SKILL.md
 │   │   └── references/
-│   │       └── tasks-template.md
+│   │       └── plan-template.md
 │   └── spec-implement/
 │       └── SKILL.md
 └── specs/                              # example specs
     ├── constitution.md
     └── sample-feature/
         ├── spec.md
-        ├── tasks.md
+        ├── plan.md
         └── research/
             └── implementation-note.md
 ```
@@ -47,7 +47,7 @@ spec-skills/
 
 0. `spec-constitution` - Define shared project rules in `specs/constitution.md` when the team wants durable workflow governance
 1. `spec-specify` - Create `specs/{feature}/spec.md` from requirements
-2. `spec-tasks` - Create `specs/{feature}/tasks.md` as the execution document with key decisions, phased tasks, and DoD
+2. `spec-plan` - Create `specs/{feature}/plan.md` as the execution document with key decisions, phased tasks, and DoD
 3. `spec-implement` - Execute tasks with implement/self-validate/fix loops
 
 ## Content Style Guidelines
@@ -81,7 +81,7 @@ Every skill file follows this exact structure:
 - Skill directories: `spec-{name}` (kebab-case with `spec-` prefix)
 - Feature directories: `specs/{feature-slug}/` (kebab-case)
 - Research files: `specs/{feature}/research/{topic}.md` (kebab-case)
-- Fixed filenames: `SKILL.md`, `spec.md`, `tasks.md`; when used, the constitution file is `constitution.md`
+- Fixed filenames: `SKILL.md`, `spec.md`, `plan.md`; when used, the constitution file is `constitution.md`
 
 ### Writing Style
 

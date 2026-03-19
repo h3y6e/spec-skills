@@ -59,7 +59,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - Simplify wording
    - Resolve contradictions
 9. In the completion message, suggest the next step.
-   - If review-ready: `spec-tasks`
+   - If review-ready: `spec-plan`
    - If more refinement is needed: continue `spec-specify`
 
 ## Success Criteria
@@ -71,5 +71,5 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 
 ## Completion Guidance
 
-- Next recommended step: `spec-tasks`
+- Next recommended step: `spec-plan`
 - Include the target feature and generated `spec.md` path in the response

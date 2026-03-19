@@ -1,9 +1,9 @@
 ---
 status: draft
-summary: Phase-based tasks for [FEATURE_NAME]
+summary: Execution plan for [FEATURE_NAME]
 ---
 
-Place this file at `specs/{feature}/tasks.md`.
+Place this file at `specs/{feature}/plan.md`.
 
 ## Summary
 
@@ -74,8 +74,8 @@ Place this file at `specs/{feature}/tasks.md`.
 
 - Task: [TASK_ID]
   Change: [CHANGE_SUMMARY]
-  Doc Impact: [local-only | tasks-impacting | spec-impacting]
+  Doc Impact: [local-only | plan-impacting | spec-impacting]
   Validation: [PASS_FAIL_AND_EVIDENCE]
   Next: [NEXT_TASK]
 
-<!-- If impact is `tasks-impacting` or `spec-impacting`, stop and realign the documents before continuing implementation. -->
+<!-- If impact is `plan-impacting` or `spec-impacting`, stop and realign the documents before continuing implementation. -->

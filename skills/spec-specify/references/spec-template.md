@@ -5,7 +5,7 @@ summary: Requirements and scenarios for [FEATURE_NAME]
 
 Place this file at `specs/{feature}/spec.md`.
 
-<!-- Keep this document user-facing. Execution design and delivery sequencing belong in `tasks.md`. -->
+<!-- Keep this document user-facing. Execution design and delivery sequencing belong in `plan.md`. -->
 
 ## Context and Goals
 

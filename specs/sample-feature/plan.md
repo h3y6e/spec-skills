@@ -1,10 +1,10 @@
 ---
 status: done
-summary: Validation tasks for sample-feature
+summary: Validation plan for sample-feature
 ---
 
 ## Summary
-- `tasks.md` combines execution design, phased work, and progress updates for sample-feature.
+- `plan.md` combines execution design, phased work, and progress updates for sample-feature.
 
 ## Execution Context
 - Runtime/Platform: Markdown-only repository
@@ -14,17 +14,17 @@ summary: Validation tasks for sample-feature
 
 ## Key Decisions
 - Keep user-facing intent in `spec.md`
-- Keep execution-facing design and delivery sequencing in `tasks.md`
+- Keep execution-facing design and delivery sequencing in `plan.md`
 - Stop and realign documents before continuing after requirement-impacting discoveries
 
 ## Phase 1: Setup
 - [x] T001 Create working files under `specs/sample-feature/`
 
 ### DoD
-- [x] Skeletons for spec and tasks are in place
+- [x] Skeletons for spec and plan are in place
 
 ## Phase 2: Foundational
-- [x] T002 Check consistency between tasks and spec
+- [x] T002 Check consistency between plan and spec
 - [x] T003 (P) Check minimal frontmatter (`status/summary`)
 
 ### DoD
@@ -37,11 +37,11 @@ summary: Validation tasks for sample-feature
 - [x] Story and acceptance criteria are testable
 
 ## Phase 4: User Story 2 (P2)
-- [x] T005 [US2] Create execution design in `tasks.md`
-- [x] T006 [US2] Update progress in `tasks.md`
+- [x] T005 [US2] Create execution design in `plan.md`
+- [x] T006 [US2] Update progress in `plan.md`
 
 ### DoD
-- [x] Execution design and tasks stay aligned with the spec
+- [x] Execution design and plan stay aligned with the spec
 
 ## Phase 5: Polish
 - [x] T007 Record implementation notes in `research/implementation-note.md`
@@ -58,7 +58,7 @@ summary: Validation tasks for sample-feature
   Validation: `spec.md` includes stories, requirements, and success criteria.
   Next: T005
 - Task: T006
-  Change: Created execution design and progress tracking in `tasks.md`.
+  Change: Created execution design and progress tracking in `plan.md`.
   Doc Impact: local-only
-  Validation: `tasks.md` is executable and phase DoD remains aligned with the spec.
+  Validation: `plan.md` is executable and phase DoD remains aligned with the spec.
   Next: T007
