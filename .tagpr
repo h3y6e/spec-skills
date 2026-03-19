@@ -3,3 +3,4 @@
 	versionFile = skills/spec-constitution/SKILL.md,skills/spec-specify/SKILL.md,skills/spec-tasks/SKILL.md,skills/spec-implement/SKILL.md
 	vPrefix = true
 	changelog = false
+	calendarVersioning = YYYY.MM.MICRO
