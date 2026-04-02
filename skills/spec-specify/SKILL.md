@@ -19,12 +19,10 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 - User requirements
 - Existing `specs/constitution.md` when present
 - Existing `specs/{feature}/spec.md` when present
-- Existing `specs/{feature}/research/*.md` when present
 
 ## Output
 
 - `specs/{feature}/spec.md`
-- `specs/{feature}/research/{topic}.md` when needed
 
 ## Steps
 
@@ -48,7 +46,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 5. Ask only high-impact clarification questions.
    - Actively look for ambiguity that would materially change scope, behavior, data, UX, or downstream execution design
    - Resolve high-impact ambiguity before recommending the next phase
-   - Record low-impact open points in `research/{topic}.md`
+   - Delegate low-impact open points to `spec-research` for investigation
 6. Integrate answers directly into the spec.
 7. Update frontmatter.
    - Required keys: `status`, `summary`
@@ -60,6 +58,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - Resolve contradictions
 9. In the completion message, suggest the next step.
    - If review-ready: `spec-plan`
+   - If open points need investigation: `spec-research`
    - If more refinement is needed: continue `spec-specify`
 
 ## Success Criteria
@@ -71,5 +70,5 @@ Resolve ambiguity within this skill before handing off to downstream phases.
 
 ## Completion Guidance
 
-- Next recommended step: `spec-plan`
+- Next recommended step: `spec-plan` (or `spec-research` if open points remain)
 - Include the target feature and generated `spec.md` path in the response

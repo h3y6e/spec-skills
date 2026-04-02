@@ -25,7 +25,6 @@ Implement using `specs/{feature}/plan.md` as the single progress source.
 - `specs/{feature}/plan.md` when implementation findings change execution design
 - `specs/{feature}/spec.md` when implementation findings change requirements
 - Progress updates in `specs/{feature}/plan.md`
-- `specs/{feature}/research/{topic}.md` when validation notes are needed
 
 ## Steps
 
@@ -40,7 +39,7 @@ Implement using `specs/{feature}/plan.md` as the single progress source.
      - `local-only`: stays within approved task intent; continue in the current loop
      - `plan-impacting`: changes sequencing, technical approach, dependencies, or validation strategy; update `plan.md`, then resume only after it is aligned
      - `spec-impacting`: changes user-visible behavior, scope, acceptance scenarios, or requirements; stop implementation and return to upstream phases
-   - Record external platform, library, API, or framework findings in `research/{topic}.md` when they materially affect implementation choices
+   - When external platform, library, API, or framework findings need deeper investigation, delegate to `spec-research` instead of recording them inline
    - Self-validate (tests, type checks, static checks, security checks)
    - Fix
 5. Update `plan.md` after each successful task.

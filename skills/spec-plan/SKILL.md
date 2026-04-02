@@ -17,13 +17,11 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 
 - Existing `specs/constitution.md` when present
 - `specs/{feature}/spec.md`
-- `specs/{feature}/research/*.md` when present
 
 ## Output
 
 - `specs/{feature}/plan.md`
 - `specs/{feature}/spec.md` when backflow is required
-- `specs/{feature}/research/{topic}.md` for additional discovery notes
 
 ## Steps
 
@@ -35,7 +33,7 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
    - Execution Context
    - Key Decisions
    - Phases: Setup, Foundational, User Story (P1, P2, ...), Polish
-   - Add spike or research tasks before implementation when uncertainty could change the spec or plan structure
+   - When uncertainty could change the spec or plan structure, delegate to `spec-research` instead of investigating inline
 4. Capture only execution-facing detail that must stay aligned during implementation.
    - Record technical context, constraints, validation strategy, and key decisions here instead of splitting them into another document
    - Reference the spec for user-facing intent rather than repeating full story prose
@@ -62,6 +60,7 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 11. In the completion message, suggest the next step.
      - After approval: `spec-implement`
      - If requirement changes are needed: `spec-specify`
+     - If technical investigation is needed: `spec-research`
 
 ## Success Criteria
 
@@ -75,4 +74,5 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 ## Completion Guidance
 
 - Next recommended step: `spec-implement`
+- If technical investigation is needed before proceeding: `spec-research`
 - Include the target feature and generated `plan.md` path in the response
