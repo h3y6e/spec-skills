@@ -11,37 +11,7 @@ All content is declarative Markdown defining AI agent skill definitions and thei
 There are **no build, lint, or test commands**.
 
 The only CI pipeline is automated release,
-triggered on push to `main`. It bumps the `metadata.version` field in all four `SKILL.md` files and creates a GitHub release.
-
-## Repository Structure
-
-```
-spec-skills/
-├── README.md
-├── skills/                             # Skill definitions (core content)
-│   ├── spec-constitution/
-│   │   ├── SKILL.md
-│   │   └── references/
-│   │       └── constitution-template.md
-│   ├── spec-specify/
-│   │   ├── SKILL.md
-│   │   └── references/
-│   │       ├── spec-template.md
-│   │       └── research-template.md
-│   ├── spec-plan/
-│   │   ├── SKILL.md
-│   │   └── references/
-│   │       └── plan-template.md
-│   └── spec-implement/
-│       └── SKILL.md
-└── specs/                              # example specs
-    ├── constitution.md
-    └── sample-feature/
-        ├── spec.md
-        ├── plan.md
-        └── research/
-            └── implementation-note.md
-```
+triggered on push to `main`. It bumps the `metadata.version` field in all five `SKILL.md` files and creates a GitHub release.
 
 ## Workflow Skills
 
@@ -49,6 +19,10 @@ spec-skills/
 1. `spec-specify` - Create `specs/{feature}/spec.md` from requirements
 2. `spec-plan` - Create `specs/{feature}/plan.md` as the execution document with key decisions, phased tasks, and DoD
 3. `spec-implement` - Execute tasks with implement/self-validate/fix loops
+
+### Utility Skills
+
+- `spec-research` - Investigate a topic and record findings in `specs/{feature}/research/{topic}.md`; callable from any phase or standalone
 
 ## Content Style Guidelines
 
