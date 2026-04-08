@@ -4,7 +4,7 @@ description: Use when a team wants to create or update specs/constitution.md to 
 license: MIT
 metadata:
   author: h3y6e
-  version: "2026.4.0"
+  version: "2026.4.1"
 ---
 
 # Constitution Skill
