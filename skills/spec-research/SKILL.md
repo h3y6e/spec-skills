@@ -4,7 +4,7 @@ description: Investigate a specific topic and record findings in specs/{feature}
 license: MIT
 metadata:
   author: h3y6e
-  version: 2026.4.2
+  version: 2026.4.3
 ---
 
 # Research Skill
