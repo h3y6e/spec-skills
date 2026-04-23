@@ -5,7 +5,7 @@
 ## Install
 
 ```sh
-npx skills add h3y6e/spec-skills -s '*'
+gh skill install h3y6e/spec-skills
 ```
 
 ## Workflow
