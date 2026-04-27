@@ -4,7 +4,7 @@ description: Execute open tasks from specs/{feature}/plan.md using an implement 
 license: MIT
 metadata:
   author: h3y6e
-  version: 2026.4.3
+  version: 2026.4.4
 ---
 
 # Implement Skill
