@@ -36,6 +36,7 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - YAGNI ruthlessly — remove unnecessary features from all designs
    - Avoid locking in technical design choices unless the user explicitly requires them
    - If optional or secondary capabilities can stand alone, prefer splitting them into separate specs instead of expanding the current one
+   - Record spec-to-spec prerequisites only in frontmatter `dependencies` as `specs/{feature}/spec.md` paths
    - Write acceptance scenarios as natural sentences that still make context, action, and outcome explicit; avoid forcing literal `Given/When/Then` wording when it hurts readability
 4. Run a specification self-review: Scope, Data, UX, Non-Functional, Integration, Edge, Terminology, Ambiguity, Completion.
 5. Ask only high-impact clarification questions.
@@ -46,8 +47,9 @@ Resolve ambiguity within this skill before handing off to downstream phases.
    - Delegate low-impact open points to `spec-research` for investigation
 6. Integrate answers directly into the spec.
 7. Update frontmatter.
-   - Required keys: `status`, `summary`
+   - Required keys: `status`, `summary`, `dependencies`
    - Initial `status`: `draft`
+   - Set `dependencies: []` when the spec has no prerequisite specs
    - Set `status: approved` when no unresolved high-impact ambiguity remains and the spec is ready for execution design and tasking
 8. Perform final review and keep the file within 150 lines.
    - Remove repetition, simplify wording, resolve contradictions

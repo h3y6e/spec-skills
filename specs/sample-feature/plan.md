@@ -8,7 +8,7 @@ summary: Validation plan for sample-feature
 
 ## Execution Context
 - Runtime/Platform: Markdown-only repository
-- Dependencies: skill docs, templates, and example specs
+- Implementation Dependencies: skill docs, templates, and example specs
 - Constraints: stay lightweight, keep docs aligned, keep files concise
 - Validation: review artifacts for consistency and record evidence in the progress log
 
@@ -25,7 +25,7 @@ summary: Validation plan for sample-feature
 
 ## Phase 2: Foundational
 - [x] T002 Check consistency between plan and spec
-- [x] T003 (P) Check minimal frontmatter (`status/summary`)
+- [x] T003 (P) Check minimal spec frontmatter (`status/summary/dependencies`)
 
 ### DoD
 - [x] Preconditions are satisfied before implementation starts

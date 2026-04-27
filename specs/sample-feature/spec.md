@@ -1,6 +1,7 @@
 ---
 status: approved
 summary: Validation spec for sample-feature
+dependencies: []
 ---
 
 ## Background and Goal
