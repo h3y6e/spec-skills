@@ -28,8 +28,9 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 ## Steps
 
 1. Resolve `language` and shared rules from `specs/constitution.md` when present; otherwise infer from the available workflow documents and the user's own message. Ask only if still unclear, then conduct all subsequent interaction in this language.
-2. Read `spec.md`, extract user stories and constraints, and confirm spec approval state.
+2. Read `spec.md`, extract frontmatter dependencies, user stories, and constraints, and confirm spec approval state.
    - Require `spec.md` to be `approved` before generating the execution plan
+   - Read listed `dependencies` before planning; use them to resolve scope, sequencing, or validation constraints
 3. Create the plan from `references/plan-template.md`.
    - Summary
    - Execution Context
@@ -54,8 +55,9 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 7. Add `DoD` under each phase.
    - Include checks for testing, observability, and rollback readiness
    - Write DoD as proof that the phase itself is complete
-8. Express dependencies through phase order and task descriptions.
+8. Express execution dependencies through phase order and task descriptions.
    - Place high-uncertainty discovery work before irreversible implementation tasks
+   - Preserve spec-to-spec prerequisites in `spec.md` frontmatter `dependencies`
 9. Run backflow if requirement gaps or contradictions are discovered.
     - Update `spec.md`
     - Reset `spec.md` status to `draft`
@@ -80,6 +82,7 @@ Create or update `specs/{feature}/plan.md` as the execution source of truth, inc
 - `(P)` marks valid parallel work.
 - Every task contains concrete code, commands, and expected output — no placeholders.
 - High-uncertainty work is front-loaded as spike or research tasks when needed.
+- Spec frontmatter dependencies are considered before tasking.
 - Backflow handling is explicit.
 
 ## Completion Guidance
