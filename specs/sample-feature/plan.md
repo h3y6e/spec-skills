@@ -17,6 +17,11 @@ summary: Validation plan for sample-feature
 - Keep execution-facing design and delivery sequencing in `plan.md`
 - Stop and realign documents before continuing after requirement-impacting discoveries
 
+## Requirement Coverage
+- US1 / FR-001 / SC-001: T001, T004, Phase 3 DoD
+- US2 / FR-002 / FR-003 / SC-002: T002, T003, T005, T006, Phase 4 DoD
+- Polish evidence: T007, Phase 5 DoD
+
 ## Phase 1: Setup
 - [x] T001 Create working files under `specs/sample-feature/`
 
@@ -55,10 +60,12 @@ summary: Validation plan for sample-feature
 - Task: T004
   Change: Created `spec.md` for sample-feature.
   Doc Impact: local-only
+  Coverage: US1, FR-001, SC-001
   Validation: `spec.md` includes stories, requirements, and success criteria.
   Next: T005
 - Task: T006
   Change: Created execution design and progress tracking in `plan.md`.
   Doc Impact: local-only
+  Coverage: US2, FR-002, FR-003, SC-002
   Validation: `plan.md` is executable and phase DoD remains aligned with the spec.
   Next: T007

@@ -7,6 +7,10 @@ dependencies: []
 ## Background and Goal
 - Validate that init skills and templates are practical in a small feature.
 
+## Approach
+- Selected direction: Keep the sample as a minimal Markdown-only workflow validation.
+- Alternatives considered: no executable harness, because the repository has no build or test framework.
+
 ## User Scenarios and Tests
 
 ### User Story 1 - Create a spec (Priority: P1)
