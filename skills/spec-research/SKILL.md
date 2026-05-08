@@ -41,6 +41,8 @@ This skill can be invoked independently or from any other skill when deeper inve
    - Read existing project context (`spec.md`, `plan.md`, other `research/*.md`)
    - Investigate external sources: documentation, APIs, library comparisons, platform constraints
    - Run a proof of concept when hands-on validation is needed — don't trust documentation alone for critical decisions
+   - Compare against working examples or reference implementations when a pattern already exists
+   - For failures or unexpected behavior, reproduce the symptom and identify root cause before recommending fixes
    - Form a hypothesis, test it minimally, then record what you found. One variable at a time.
 4. Create the research file from `references/research-template.md`.
    - Research Question: one clear question the research answers

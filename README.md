@@ -31,8 +31,8 @@ flowchart TD
 | [`spec-constitution`](./skills/spec-constitution/SKILL.md)  | Optionally define shared project rules for spec-skills runs       |
 | [`spec-specify`](./skills/spec-specify/SKILL.md)            | Create a feature specification and resolve ambiguity in one flow  |
 | [`spec-research`](./skills/spec-research/SKILL.md)          | Investigate a topic and record findings with decision and impact  |
-| [`spec-plan`](./skills/spec-plan/SKILL.md)                  | Turn a spec into one execution-ready document with decisions, phased tasks, and DoD |
-| [`spec-implement`](./skills/spec-implement/SKILL.md)        | Execute tasks and maintain quality through a self-validation loop |
+| [`spec-plan`](./skills/spec-plan/SKILL.md)                  | Turn a spec into one execution-ready document with decisions, requirement coverage, phased tasks, and DoD |
+| [`spec-implement`](./skills/spec-implement/SKILL.md)        | Execute tasks and maintain quality through evidence-backed validation |
 
 ## Related
 
